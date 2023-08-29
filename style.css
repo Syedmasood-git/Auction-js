@@ -1,0 +1,96 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid blue;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.badge {
+  background-color: yellow;
+  font-weight: 600;
+  padding: 3px;
+}
+.bottom {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.from-location {
+  font-size: 24px;
+  font-weight: 500;
+}
+.to-location {
+  font-size: 18px;
+  font-weight: 500;
+}
+.price {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+}
+.pending{
+    background-color: yellow;
+}
+.approved{
+    background-color: blue;
+}
+.completed{
+    background-color: green;
+}
+.cancelled{
+    background-color: red;
+}
+@media screen and (max-width: 630px){
+    .container {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 10px;
+      }
+}
+@media screen and (min-width: 630px) and (max-width:1000px){
+    .container {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 10px;
+      }
+}
+@media screen and (min-width: 1000px) and (max-width:1115px){
+    .right{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:750px){
+    .right{
+        font-size: 14px;
+    }
+}
